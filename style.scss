@@ -1,0 +1,133 @@
+@import "variable";
+
+body {
+    background-color: $main-color;
+    font-family: $font-main;
+}
+
+.header {
+    display: inline-block;
+    flex-direction: row;
+    background-color:black;
+    padding: 2px;
+    width: 100%;
+    font-size:larger;
+    flex: 1 1 0;
+
+    &__sidebar{
+        display: flex;
+        width: 350px;
+
+        &--list{
+           list-style-type: none;
+        }
+
+        &--item{
+     text-decoration: none;
+     text-align: start;
+     color: white;
+     display: inline;
+     padding: 10px;
+     
+        }
+
+        &--link{
+            text-decoration: none;
+            color: azure;
+
+            &:hover{
+                background-color: aquamarine;
+            }
+        }
+        }
+}
+
+.card {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 90px;
+    
+    &__contents{
+        background-color: rgba(0, 0, 0, 0.804);
+        border: 1px solid rgba(0, 0, 0, 0.29);
+        padding: 15px;
+        border-radius: 10px;
+        width: 280px;
+        height: 510px;
+
+       
+         &--title{
+            text-align: center;
+            color: azure;
+            font-size: larger;
+            border: 1px solid ghostwhite;
+            border-radius: 10px;
+         }
+
+        &--image{
+            height: 430px;
+            width: 250px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+    }
+
+    &--items{
+        display: flex;
+    }
+}
+
+
+.block{
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     margin-top: 90px;
+
+    &__contents{
+        background-color: rgba(0, 0, 0, 0.804);
+        border: 1px solid rgba(0, 0, 0, 0.29);
+        padding: 15px;
+        border-radius: 10px;
+        width: 280px;
+        height: 510px;
+        margin-bottom: 20px;
+
+        &--title{
+            text-align: center;
+            color: azure;
+            font-size: larger;
+            border: 1px solid ghostwhite;
+            border-radius: 10px;
+        }
+
+        &--image{
+            height: 430px;
+            width: 250px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+    }
+
+    &--items{
+        display:flex;
+}
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 95px;
+    color: azure;
+    background-color: aquamarine;
+}
+
+.footer{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: black;
+    color: azure;
+}
